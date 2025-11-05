@@ -6,8 +6,8 @@ Our objective is to finetune the image classification foundation model.
 
 ## Base Foundation Model
 
-The base foundation model is **Vision Transformer (ViT)** trained by Google.  
-[🔗 Hugging Face model link](https://huggingface.co/google/vit-base-patch16-224-in21k)
+The base foundation model is **DINOv2** trained by Meta.  
+[🔗 Hugging Face model link](https://huggingface.co/facebook/dinov2-small)
 
 
 
@@ -24,8 +24,8 @@ To download the dataset, you can use the **kagglehub** Python package.
 ```python
 from transformers import AutoImageProcessor, AutoModel
 
-processor = AutoImageProcessor.from_pretrained("google/vit-base-patch16-224-in21k")
-model = AutoModel.from_pretrained("google/vit-base-patch16-224-in21k")
+processor = AutoImageProcessor.from_pretrained("facebook/dinov2-small")
+model = AutoModel.from_pretrained("facebook/dinov2-small")
 
 import kagglehub
 
