@@ -1,4 +1,5 @@
-# Image-finetuners
+# Image-Finetuners
+Our objective is to finetune the image classification foundation model
 
 
 
